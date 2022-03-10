@@ -27,3 +27,12 @@ describe ('calcMercury', () => {
   });
 });
 
+describe ('calcVenus', () => {
+  test ('should take a persons age as an input and return their age in Venus years', () => {
+    let person = new Person ("");
+    person.getAge(100);
+    person.calcVenus(person.age);
+    expect(person.name).toEqual("");
+    expect(person.age).toEqual(161);
+  });
+});
