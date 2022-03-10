@@ -2,7 +2,7 @@
 
 #### By _Rob Sameh_
 
-#### A Webpage page built using HTML and CSS, JavaScript, Node.js and JQuery
+#### A WebApp built using HTML and CSS, JavaScript, Node.js and JQuery
 
 ## Technologies Used
 
@@ -14,7 +14,7 @@
 
 ## Setup/Installation Requirements
 
-Be sure to clone this repo to your local machine by running the command `git clone `<INSERT URL> . After you do this you should be able to open the index.html file located in the <FOLDER> folder in the web browser of your choosing. Don't forget to `npm install` and `npm run build`!
+Be sure to clone this repo to your local machine by running the command `git clone https://github.com/rawbsrn/SuperGalacticAgeCalculator` . After you do this you should be able to open the index.html file located in the <FOLDER> folder in the web browser of your choosing. Don't forget to `npm install` and `npm run build`!
 
 You may need to install Node.js on your machine in order to get working, you can follow the instructions here for more information: https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js
 
