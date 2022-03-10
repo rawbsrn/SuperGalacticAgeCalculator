@@ -64,3 +64,12 @@ describe ('lifeExpectancy', () => {
     expect(person.lifeExpectancy(100)).toEqual(100);
   });
 });
+
+describe ('CalcExpectancy', () => {
+  test ('should take a persons age & life expectancy as an input and return the difference', () => {
+    let person = new Person ("");
+    expect(person.name).toEqual("");
+    person.getAge(100);
+    expect(person.calcExpectancy(person.age,person.lifeExpectancy(50)).toEqual(50));
+  });
+});
