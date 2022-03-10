@@ -36,3 +36,13 @@ describe ('calcVenus', () => {
     expect(person.age).toEqual(161);
   });
 });
+
+describe ('calcMars', () => {
+  test ('should take a persons age as an input and return their age in Mars years', () => {
+    let person = new Person ("");
+    person.getAge(100);
+    person.calcMars(person.age);
+    expect(person.name).toEqual("");
+    expect(person.age).toEqual(53);
+  });
+});
