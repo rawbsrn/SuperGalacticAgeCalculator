@@ -15,6 +15,16 @@ calcMercury(age) {
 calcVenus(age) {
   return this.age = (age / .62 )
 }
+
+calcMars(age) {
+  return this.age = (age / 1.88 )
+}
+
+calcJupiter(age) {
+  return this.age = (age / 11.86 )
+}
+
+
 }
 
 //division goes here
