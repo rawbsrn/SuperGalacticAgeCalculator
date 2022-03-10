@@ -21,9 +21,8 @@ describe ('calcMercury', () => {
   test ('should take a persons age as an input and return their age in Mercury years', () => {
     let person = new Person ("");
     person.getAge(100);
-    person.calcMercury(person.age);
     expect(person.name).toEqual("");
-    expect(person.age).toEqual(416);
+    expect(person.calcMercury(person.age)).toBeGreaterThanOrEqual(416);
   });
 });
 
