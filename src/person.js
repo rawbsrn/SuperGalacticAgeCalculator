@@ -29,8 +29,11 @@ lifeExpectancy(life) {
 }
 
 calcExpectancy(age,life) {
-  return (parseInt(age) - parseInt(life));
-
+  if (parseInt(life) - parseInt(age) < 0) {
+    return (-1 * (parseInt(life) - parseInt(age)));
+  } else {
+    return (parseInt(life) - parseInt(age));
+  }
 }
 
 }
