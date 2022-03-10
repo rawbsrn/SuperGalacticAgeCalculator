@@ -56,3 +56,11 @@ describe ('calcJupiter', () => {
     expect(person.age).toEqual(8);
   });
 });
+
+describe ('lifeExpectancy', () => {
+  test ('should take a persons life expectancy as an input and return their life expectancy', () => {
+    let person = new Person ("");
+    expect(person.name).toEqual("");
+    expect(person.lifeExpectancy(100)).toEqual(100);
+  });
+});
