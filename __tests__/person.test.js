@@ -69,6 +69,6 @@ describe ('CalcExpectancy', () => {
     let person = new Person ("");
     expect(person.name).toEqual("");
     person.getAge(100);
-    expect(person.calcExpectancy(person.age,person.lifeExpectancy(50)).toEqual(50));
+    expect(person.calcExpectancy(person.age,50)).toEqual(50);
   });
 });

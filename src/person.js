@@ -9,21 +9,29 @@ return this.age = age;
 }
 
 calcMercury(age) {
-  return this.age = (age / .24 )
+  return this.age = (age / .24);
 }
 
 calcVenus(age) {
-  return this.age = (age / .62 )
+  return this.age = (age / .62);
 }
 
 calcMars(age) {
-  return this.age = (age / 1.88 )
+  return this.age = (age / 1.88);
 }
 
 calcJupiter(age) {
-  return this.age = (age / 11.86 )
+  return this.age = (age / 11.86);
 }
 
+lifeExpectancy(life) {
+  return this.life = life;
+}
+
+calcExpectancy(age,life) {
+  return (parseInt(age) - parseInt(life));
+
+}
 
 }
 
