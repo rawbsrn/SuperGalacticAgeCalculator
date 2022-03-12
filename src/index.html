@@ -14,14 +14,15 @@
     <input id="name" type="string">
     <label for="expectancy">Enter your life expectancy:</label>
     <input id="expectancy" type="number">
-    <label for="planet">Select a planet to calculate your age on:</label>
-    <select class="form-control" id="planet">
-      <option>Mercury</option>
-      <option>Venus</option>
-      <option>Earth</option>
-      <option>Mars</option>
-      <option>Jupiter</option>
-    </select>
+    <label for="planet" class="form-label">Select a planet to calculate your age on:</label>
+    <input class="form-control" list="datalistOptions" id="planet">
+    <datalist id="datalistOptions">
+      <option value="Mercury"</option>
+      <option value="Venus"</option>
+      <option value="Earth"</option>
+      <option value="Mars"</option>
+      <option value="Jupiter"</option>
+    </datalist>
     <button type="submit">Submit</button>
   </form>
   <ul id="response"></ul>

@@ -15,7 +15,7 @@ devServer: {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'rpg',
+      title: 'superGalacticAgeCalculator',
       template: './src/index.html',
       inject: 'body'
     })
