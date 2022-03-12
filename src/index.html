@@ -8,12 +8,20 @@
 </head>
 <body>
   <form id="age-form">
-    <label for="age">Enter a number:</label>
+    <label for="age">Enter your age:</label>
     <input id="age" type="number">
     <label for="name"">Enter your name:</label>
     <input id="name" type="string">
     <label for="expectancy">Enter your life expectancy:</label>
     <input id="expectancy" type="number">
+    <label for="planet">Select a planet to calculate your age on:</label>
+    <select class="form-control" id="planet">
+      <option>Mercury</option>
+      <option>Venus</option>
+      <option>Earth</option>
+      <option>Mars</option>
+      <option>Jupiter</option>
+    </select>
     <button type="submit">Submit</button>
   </form>
   <ul id="response"></ul>

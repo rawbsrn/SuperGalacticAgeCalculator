@@ -10,8 +10,25 @@ $(document).ready(function() {
     const age = $('#age').val();
     const name = $('#name').val();
     const expectancy = $('#expectancy').val();
+    const planet = $('#planet').val();
     const person = new Person(name);
-    const response = person.calcExpectancy(person.getAge(age),person.lifeExpectancy(expectancy));
-    $('#response').append("<p>" + response + " " + "years" + "</p>");
+    switch (planet) {
+      case ("Mercury"):
+        person.calcMercury(person.getAge(age));
+        break;
+      case ("Venus"):
+        person.calcVenus(person.getAge(age));
+        break;
+      case ("Mars"):
+        person.calcMars(person.getAge(age));
+        break;
+      case ("Jupiter"):
+        person.calcJupiter(person.getAge(age));
+        break;
+      default:
+        person.getAge(age);
+    }
+    const response = person.calcExpectancy(person.age,person.lifeExpectancy(expectancy));
+    $('#response').append("<p>" + response + " , " + name + "</p>");
   });
 });
