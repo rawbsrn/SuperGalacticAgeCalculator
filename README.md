@@ -11,7 +11,7 @@
 * JavaScript
 * JQuery
 * Npm
-* Webpack(sp?)
+* Webpack
 
 ## Setup/Installation Requirements
 
