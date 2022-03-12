@@ -30,9 +30,9 @@ lifeExpectancy(life) {
 
 calcExpectancy(age,life) {
   if (parseInt(life) - parseInt(age) < 0) {
-    return (-1 * (parseInt(life) - parseInt(age))); //years lived past expectancy
+    return (-1 * (parseInt(life) - parseInt(age))) + " years past life expectancy"; //years lived past expectancy
   } else {
-    return (parseInt(life) - parseInt(age)); //years to go before expectancy
+    return (parseInt(life) - parseInt(age)) + " years till expected death"; //years to go before expectancy
   }
 }
 

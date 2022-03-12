@@ -69,13 +69,13 @@ describe ('CalcExpectancy', () => {
     let person = new Person ("");
     expect(person.name).toEqual("");
     person.getAge(25);
-    expect(person.calcExpectancy(person.age,50)).toEqual(25);
+    expect(person.calcExpectancy(person.age,50)).toEqual("25 years till expected death");
   });
 
   test ('should take a persons age & life expectancy as an input and return the difference, this time if age is bigger than life expectancy', () => {
     let person = new Person ("");
     expect(person.name).toEqual("");
     person.getAge(100);
-    expect(person.calcExpectancy(person.age,50)).toEqual(50);
+    expect(person.calcExpectancy(person.age,50)).toEqual("50 years past life expectancy");
   });
 });
